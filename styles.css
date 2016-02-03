@@ -9,48 +9,6 @@ body {
     color: #04BDE2;
     background-image: url('bg.jpg');
     background-size: cover;
-
-}
-
-.lightbox {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 60%;
-    max-width: 800px;
-    min-width: 400px;
-    min-height: 300px;
-    transform: translate(-50%, -50%);
-    background-color: #E5F4F6;
-    border-radius: 5px;
-    box-shadow: 0 0 0 10px rgba(0,0,0,0.2);
-    padding: 15px;
-}
-
-.logo {
-    position: absolute;
-    left: -150px;
-    top: -150px;
-}
-
-p {
-    margin: 0;
-    float: right;
-    width: 40%;
-    font-size: 1.6rem;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-    right: 15px;
-}
-
-footer > * + * {
-    margin-left: 3em;
 }
 
 a {
@@ -67,6 +25,69 @@ a.button {
     transition: all 1s;
 }
 
-.shake-slow {
-    animation-play-state: paused;
+.lightbox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    max-width: 700px;
+    min-height: 300px;
+    transform: translate(-50%, -50%);
+    background-color: #E5F4F6;
+    border-radius: 5px;
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    padding-bottom: 150px;
+}
+
+.logo {
+    position: absolute;
+    left: -150px;
+    top: -150px;
+}
+
+p {
+    margin: 0;
+    margin-top: 250px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+}
+
+footer a.button {
+    display: block;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .lightbox {
+        padding-bottom: 0;
+    }
+
+    p {
+        float: right;
+        width: 40%;
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer > * + * {
+        margin-left: 3em;
+    }
+
+    footer a.button {
+        display: inline-block;
+    }
+
 }

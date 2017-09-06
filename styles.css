@@ -24,7 +24,6 @@ body {
 
 a{
   color: #FF1493;
-  text-decoration: none;
   transition: color .2s ease;
 }
 
@@ -44,10 +43,6 @@ main {
 
 .logo{
   max-width: 500px;
-}
-
-.header-link{
-  margin: 0 0 2rem;
 }
 
 h2 {

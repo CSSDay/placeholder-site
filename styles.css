@@ -68,9 +68,14 @@ h2 {
   margin: 0 .5rem;
 }
 
-#mc_embed_signup {
-  margin: 3rem 0 0;
+#mc_embed_signup, .update2017 {
+  color: #888888;
+  margin: 1rem 0 0;
   max-width: 40em;
+}
+
+hr{
+  border: 2px dashed #FF1493;
 }
 
 #mc_embed_signup label {
